@@ -12,6 +12,9 @@ import rateLimit from 'express-rate-limit';
 
 const app: Application = express();
 
+// Trust the reverse proxy (Render) so we can get the actual client IP for rate limiting
+app.set('trust proxy', 1);
+
 // Middlewares
 app.use(helmet());
 app.use(cors());
