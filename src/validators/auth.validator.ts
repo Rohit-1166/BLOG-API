@@ -4,17 +4,17 @@ export const registerSchema = z.object({
   body: z.object({
     username: z
       .string({
-        required_error: 'Username is required',
+        message: 'Username is required',
       })
       .min(3, 'Username must be at least 3 characters'),
     email: z
       .string({
-        required_error: 'Email is required',
+        message: 'Email is required',
       })
       .email('Not a valid email'),
     password: z
       .string({
-        required_error: 'Password is required',
+        message: 'Password is required',
       })
       .min(6, 'Password must be at least 6 characters'),
   }),
@@ -24,12 +24,12 @@ export const loginSchema = z.object({
   body: z.object({
     email: z
       .string({
-        required_error: 'Email is required',
+        message: 'Email is required',
       })
       .email('Not a valid email'),
     password: z
       .string({
-        required_error: 'Password is required',
+        message: 'Password is required',
       }),
   }),
 });

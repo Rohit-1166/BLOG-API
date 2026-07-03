@@ -6,7 +6,7 @@ import { catchAsync } from '../utils/catchAsync';
 
 const signToken = (id: string) => {
   return jwt.sign({ id }, process.env.JWT_SECRET as string, {
-    expiresIn: process.env.JWT_EXPIRES_IN || '90d',
+    expiresIn: (process.env.JWT_EXPIRES_IN || '90d') as any,
   });
 };
 
@@ -29,7 +29,7 @@ export const register = catchAsync(async (req: Request, res: Response, next: Nex
     password,
   });
 
-  const token = signToken(newUser._id as string);
+  const token = signToken(newUser._id.toString());
 
   res.status(201).json({
     status: 'success',
@@ -52,7 +52,7 @@ export const login = catchAsync(async (req: Request, res: Response, next: NextFu
     return next(new AppError('Incorrect email or password', 401));
   }
 
-  const token = signToken(user._id as string);
+  const token = signToken(user._id.toString());
 
   res.status(200).json({
     status: 'success',

@@ -1,4 +1,4 @@
-# Blog API - Backend Development Internship Task
+# Modern Blog API
 
 A robust, production-ready RESTful API for a blogging platform, built with **Node.js, Express, TypeScript, and MongoDB**. This project focuses on clean architecture, security, and developer productivity, serving as a showcase of backend engineering best practices.
 
@@ -33,8 +33,8 @@ A robust, production-ready RESTful API for a blogging platform, built with **Nod
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/blog-api.git
-cd blog-api
+git clone https://github.com/Rohit-1166/BLOG-API.git
+cd BLOG-API
 ```
 
 ### 2. Install dependencies
@@ -106,5 +106,4 @@ src/
 - Zod prevents NoSQL injection and malformed data from reaching the database layer.
 
 ---
-
-_Built with ❤️ for a backend engineering internship assessment._
+*Designed and engineered for high performance and scalability.*
