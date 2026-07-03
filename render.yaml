@@ -6,7 +6,7 @@ services:
     startCommand: npm start
     envVars:
       - key: NODE_VERSION
-        value: 18.20.2
+        value: 20
       - key: MONGO_URI
         sync: false
       - key: JWT_SECRET
