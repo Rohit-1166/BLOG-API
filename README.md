@@ -2,6 +2,10 @@
 
 A robust, production-ready RESTful API for a blogging platform, built with **Node.js, Express, TypeScript, and MongoDB**. This project focuses on clean architecture, security, and developer productivity, serving as a showcase of backend engineering best practices.
 
+### 🌐 Live Demo & Documentation
+- **Live API Base URL**: [https://blog-api-ptqb.onrender.com/api/v1](https://blog-api-ptqb.onrender.com/api/v1)
+- **Interactive Swagger Docs**: [https://blog-api-ptqb.onrender.com/api-docs](https://blog-api-ptqb.onrender.com/api-docs)
+
 ## Features
 
 - **Authentication & Authorization**: Secure user registration and login using JSON Web Tokens (JWT) and bcrypt for password hashing.
